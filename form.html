@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford-World's Best University</title>
+    <style>
+        body {
+            background: url(images/background.jpg);
+            background-attachment: fixed;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .header {
+            background-color: white;
+            width: 60%;
+            height: 182px;
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            position: relative;
+            left: 31%;
+            height: 100%;
+            background-color: white;
+            width: 37%;
+        }
+
+
+        p {
+            font-size: large;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+        }
+
+        .header{
+            position: relative;
+            left: 20px;
+            font-size: medium;
+            font-weight: normal;
+        }
+
+        .gender,.DOB,.Address,.Mobile,.Email,.country,.password,.Name {
+            margin: 12px 0px 0px 40px;
+
+        }
+
+        input {
+            padding: 7px;
+            margin: 0px 10px 10px 0px;
+            color: black;
+            border: 1px solid skyblue;
+            width: 38%;
+        }
+
+        ::placeholder {
+            color: black;
+            font-size: 16px;
+        }
+
+        #months,
+        #Days,
+        #year {
+            padding: 10px;
+        }
+
+       
+       
+        .button {
+            margin: 0px 0px 0px 40px;
+            padding: 6px;
+
+        }
+
+        .male {
+            margin-left: -81px;
+        }
+        .female{
+            margin-left: 20px;
+        }
+
+       
+        hr {
+            width: 100%;
+        }
+
+        #psw {
+            border: 1px solid skyblue;
+            border-radius: 10px;
+            width: 30%;
+        }
+        #ml,#fm{
+            margin-left: -83px;
+        }
+    </style>
+</head>
+
+<body>
+   
+
+
+    <div class="container">
+        <div class="header">
+            <img src="images/logo.png" alt="logo">
+            <h1 style="margin-bottom: 33px;">University Admission</h1>
+            <p id="first">Please fill in the form carefully</p>
+            
+    
+        </div>
+        <hr>
+        
+        <form>
+            <div class="Name">
+                <p>Name *</p>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+
+            </div>
+
+            <div class="gender">
+                <p>Gender *</p>
+                <input type="radio" class="male" name="gender">
+                <label for="Male" id="ml">Male</label>
+                <input type="radio" class="female" name="gender">
+                <label for="Male" id="fm">Female</label>
+
+            </div>
+
+            <div class="DOB">
+
+                <p>Date Of Birth *</p>
+                <select name="months" id="months">
+                    <option value="please select">Select</option>
+
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <select name="Days" id="Days">
+                    <option value="please select">Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month" id="year">
+                    <option value="please select">Select</option>
+                    <option value="one">2000</option>
+                    <option value="one">2001</option>
+                    <option value="two">2002</option>
+                    <option value="three">2003</option>
+                    <option value="four">2004</option>
+                    <option value="five">2005</option>
+                    <option value="six">2006</option>
+                    <option value="seven">2007</option>
+                    <option value="eight">2008</option>
+                    <option value="nine">2009</option>
+                    <option value="ten">2010</option>
+                    <option value="eleven">2011</option>
+                    <option value="twelve">2012</option>
+                </select>
+
+            </div>
+            <div class="country">
+                <p>Country *</p>
+                <input type="text" placeholder="Country Name">
+            </div>
+
+            <div class="Address">
+                <p>Permanent Address *</p>
+                <input type="text" placeholder="street address"><br>
+
+                <input type="text" placeholder="city">
+                <input type="text" placeholder="state/province">
+            </div>
+            <div class="Mobile">
+                <p>Mobile *</p>
+                <input type="text" placeholder="Enter phone number">
+
+
+            </div>
+            <div class="Email">
+                <p>E-mail Addres *</p>
+                <input type="text" placeholder="ex: myname@example.com">
+            </div>
+            <div class="password">
+                <p>Password *</p>
+                <input type="password" placeholder="Enter new password" id="psw"><br>
+                <input type="password" placeholder="Retype new password" id="psw">
+            </div>
+            <button type="submit" class="button">Submit</button>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

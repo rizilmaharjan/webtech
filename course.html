@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford-World's Best University</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: url(images/background.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 281px;
+            width: 100%;
+
+        }
+
+        .container {
+            position: relative;
+            top: 188px;
+            background-color: white;
+            height: 823px;
+
+
+        }
+
+        #main {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            top: 63px;
+
+
+            color: white;
+            font-size: 46px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+        }
+
+        li a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        li a:hover {
+            opacity: 0.6;
+            color: green;
+        }
+
+        ul {
+            margin-top: 28px;
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 100px;
+            font-weight: 450;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 110px;
+
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 40px 10px;
+            position: relative;
+            top: 190px;
+            margin-left: 94px;
+        }
+
+        .business,
+        .arts,
+        .machinelearning,
+        .artificialintelligence,
+        .anatomy,
+        .engineering {
+            border: 1px solid black;
+            text-align: justify;
+            height: 220px;
+            background-color: lightyellow;
+            opacity: 0.8;
+            width: 369px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #title {
+            font-weight: bolder;
+            position: relative;
+            top: 2px;
+        }
+
+        #content {
+            position: relative;
+            top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html" target="_blank">ABOUT</a></li>
+            <li><a href="course.html" target="_blank">COURSE</a></li>
+            <li><a href="contact.html" target="_blank">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    <h1 id="main">Our Courses</h1>
+    <div class="container">
+        <h1>Courses we offer</h1>
+        <p>Eduford’s graduate courses are challenging and intensive: we expect a lot from our graduate students. </p>
+
+        <div class="courses">
+            <div class="business">
+                <p id="title">
+                    Business
+                </p>
+                <p id="content">
+                    Business and related subjects are among the most popular fields of study at universities around the
+                    world. Such programmes typically introduce students to, or deepen existing knowledge of the
+                    principles and practices that underpin management operations, and drive the professionals charged to
+                    execute them.
+                    At SBCS, our business programmes explore, inter alia, strategic planning, finance, human resource
+                    management, organizational behaviour and policies, and technology innovation and integration.
+                </p>
+            </div>
+            <div class="arts">
+                <p id="title">Arts</p>
+                <p id="content">
+                    Arts Subjects can be broadly defined as an academic discipline that deals with the study of the
+                    human condition, developing critical, argumentative, and creative skills of the student. It involves
+                    methodologies that are generally analytical, critical, or speculative. The subjects offered under
+                    this stream range from humanities, visual arts, literary arts, and performing arts.
+                </p>
+            </div>
+            <div class="machinelearning">
+                <p id="title">Machine Learning</p>
+                <p id="content">
+                    Whoever you are, we are looking forward to guiding you through you first machine learning project.
+                    NB this course is designed to introduce you to Machine Learning without needing any programming.
+                    That means that we don't cover the programming based machine learning tools like python and
+                    TensorFlow. Machine learning Machine learning...
+                </p>
+
+            </div>
+            <div class="artificialintelligence">
+                <p id="title">Artificial Intelligence</p>
+                <p id="content">
+                    Become an expert in data science by mastering analytics, visualisation, and governance of data, and
+                    discover the fascinating world of AI. This programme also covers general business skills, which will
+                    boost your employability.
+                </p>
+            </div>
+            <div class="anatomy">
+                <p id="title">Anatomy</p>
+                <p id="content">
+                    Human anatomy is the study of the structures of the human body. An understanding of anatomy is key
+                    to the practice of medicine and other areas of health. The word “anatomy” comes from the Greek words
+                    “ana,” meaning “up,” and “tome,” meaning “a cutting.” Traditionally, studies of anatomy have
+                    involved cutting up, or dissecting, organisms.
+
+                </p>
+            </div>
+            <div class="engineering">
+                <p id="title">Aerospace Engineering</p>
+                <p id="content">
+                    One giant leap for manufacturing. Skyrocket your capabilities. Learn how to compete in the global
+                    aerospace industry. Full Part Tutorials. Aerospace Models. Machine Aerospace Metals.
+                </p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>

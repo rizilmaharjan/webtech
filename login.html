@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduford-World's Best University</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .container{
+            background: url("logosquare.png");
+            height: 750px;
+            width: 57%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: black;
+            position: fixed;
+        }
+        .form{
+            right: 0;
+            width: 43%;
+            padding: 20px;
+            height: 750px;
+            background-color: black;
+            position: fixed;
+            color: white;
+    
+        }
+        input[type=text], input[type=password]{
+            width: 60%;
+            padding: 15px;
+            margin: 6px 0px 25px 0px;
+            border: 1px solid skyblue;
+            border-radius: 8px;
+        }
+        .button{
+            background-color:darkgreen;
+            color: white;
+            padding: 15px;
+            width: 60%;
+            cursor: pointer;
+            border: none;
+            opacity: 0.9;
+            margin-top: 20px;
+        }
+        .button:hover{
+            opacity: 1;
+        }
+        a{
+            text-decoration: none;
+            position: relative;
+            left:126px;
+            top: 20px;
+            color: white;
+        }
+       h1{
+           margin: 52px 0px 20px 0px;
+       }
+       #university{
+            position: relative;
+            top: -5px;
+            font-size: 50px;
+            color: rgb(186, 201, 207);
+       }
+       img{
+           margin-top: 22x;
+           position: relative;
+           top: 22px;
+       }
+       a:hover{
+           opacity: 0.8;
+       }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        
+    </div>
+    <form action="" class="form">
+        <img src="images/logo.png" alt="logo">
+        <h1 id="university">Join University today</h1>
+        <h1>Login</h1>
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Email"><br>
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter password"><br>
+        <button type="submit" class="button">Login</button><br>
+        
+        <a href="form.html" target="_blank">Create new account</a>
+    </form>
+</body>
+
+</html>
