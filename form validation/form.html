@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form onsubmit="return validation()">
+        <label for="fname">First Name:</label>
+        <input type="text" id="first" name="fname">
+
+        <label for="sname">Last Name:</label>
+        <input type="text" id="second" name="lname"><br>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age">
+
+        <label for="password">Password:</label>
+        <input type="password" id="psw" name="password">
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="male" name="gender" value="m">Male
+        <input type="radio" id="female" name="gender" value="f">Female<br>
+
+
+        <input type="checkbox" id="field1" name="field">Bsc.Csit <br>
+        <input type="checkbox" id="field2" name="field">BCA <br>
+        <input type="checkbox" id="field3" name="field">BIT <br>
+
+
+        <input type="submit" name="signup">
+
+
+
+
+
+    </form>
+
+    <script>
+
+        function validation() {
+
+            // for first name and last name
+
+            var fname = document.getElementById("first").value;
+            if(fname == ""){
+                alert("Enter first name");
+            }
+            else if(fname.length < 4){
+                alert("firstname should contain more than four letters");
+            }
+            
+
+            var lname = document.getElementById("second").value;
+            if(lname == ""){
+                alert("Enter Last name");
+            }
+
+            
+            //  for password
+
+            
+            
+            var password = document.getElementById("psw").value;
+            var regx = /[0-9][a-zA-Z0-9]*[a-zA-Z0-9][$]/;
+           
+            if(password == ""){
+                
+                alert("Enter password");
+            }
+            else if(password.length < 6){
+                alert("password is too weak");
+            }
+            else if (!regx.test(password.value)) {
+                alert("password should start with digit and end with $");
+            }
+            
+            
+            var male = document.getElementById("male").checked;
+            var female = document.getElementById("female").checked;
+            if (male == false && female == false) {
+                alert("Gender need to be selected");
+            }
+            
+            // for age
+
+            var age = document.getElementById("age").value;
+            if(age == ""){
+                alert("Enter age");
+            }
+            else if(age > 100 || age < 1){
+                alert("Invalid age");
+            }
+
+            //for checkbox
+
+            var field1 = document.getElementById("field1").checked;
+            var field2 = document.getElementById("field2").checked;
+            var field3 = document.getElementById("field3").checked;
+
+            if(field1 == false && field2 == false && field3 == false)
+            {
+                alert("This field cannot be empty");
+            }
+            
+           
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form onsubmit="return validation()">
+        <label for="fname">First Name:</label>
+        <input type="text" id="first" name="fname">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="second" name="lname"><br>
+
+        <label for="ag">Age:</label>
+        <input type="text" id="age" name="ag">
+
+        <label form="password">Password:</label>
+        <input type="password" id="psw" name="password">
+
+        <label>male</label>
+        <input type="radio" id="male" name="gender">
+        <label>Female</label>
+        <input type="radio" id="female" name="gender"><br>
+
+        <input type="submit">
+
+
+
+
+
+    </form>
+</body>
+
+<script>
+
+    function validation() {
+
+        // for first name and last name
+
+        var fname = document.getElementById("first").value;
+        if (fname == "") {
+            alert("Enter first name");
+        }
+
+        var lname = document.getElementById("second").value;
+        if (lname == "") {
+            alert("Enter Last name");
+        }
+
+        //  for password
+
+        var password = document.getElementById("psw").value;
+        if (password == "") {
+
+            alert("Enter password");
+        }
+        else if (password.length < 8) {
+            alert("password should be longer than 8 characters");
+
+        }
+        // for age
+
+        var age = document.getElementById("age").value;
+        if (ag == "") {
+            alert("Enter age");
+
+
+        }
+        
+    
+        else if (ag > 110 || ag < 1) {
+            alert("invalid age");
+        }
+    }
+
+</script>
+
+</html>

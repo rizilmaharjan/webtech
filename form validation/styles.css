@@ -1,0 +1,12 @@
+tr:nth-child(odd){
+    background-color: pink;
+}
+tr:nth-child(even){
+    background-color: blue;
+}
+
+ th{
+    text-transform: uppercase;
+    color: green;
+    text-indent: -2cm;
+}
